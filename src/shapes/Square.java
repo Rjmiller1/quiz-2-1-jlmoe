@@ -9,6 +9,11 @@ public class Square extends Shape {
 	 */
 	public Square(double side) throws IllegalArgumentException{
 		// TODO Implement me
+		if (side <= 0){
+			throw new IllegalArgumentException();
+		}else{
+			this.side = side;
+		}
 	}
 	
 	/*
@@ -17,5 +22,10 @@ public class Square extends Shape {
 
 	public double getSide() {
 		return side;
+	}
+
+	public double calculateArea() {
+		double area = Math.pow(side, 2);
+		return area;
 	}
 }
