@@ -11,6 +11,8 @@ public class Square extends Shape {
 		// TODO Implement me
 		if (side <= 0){
 			throw new IllegalArgumentException();
+		}else{
+			this.side = side;
 		}
 	}
 	

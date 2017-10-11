@@ -10,8 +10,11 @@ public abstract class Shape implements Comparable<Shape> {
 	 */
 	public int compareTo(Shape shape) {
 		// TODO Implement me
-		int result = this.compareTo(shape);
-		return result;
+		double result = this.calculateArea() - shape.calculateArea();
+		if(result != 0)
+			return 0;
+		else
+			return 1;
 	}
 
 	public abstract double calculateArea();

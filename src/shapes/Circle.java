@@ -8,7 +8,11 @@ public class Circle extends Shape {
 	 * below.  Circles must have a positive radius.
 	 */
 	public Circle(double radius) throws IllegalArgumentException {
-		// TODO Implement me
+		if (radius <= 0){
+			throw new IllegalArgumentException();
+		}else{
+			this.radius = radius;
+		}
 	}
 	
 	/*
@@ -21,8 +25,8 @@ public class Circle extends Shape {
 
 
 	public double calculateArea() {
-		double area = 2*Math.PI*radius;
-		return radius;
+		double area = Math.PI * Math.pow(radius, 2);
+		return area;
 	}
 	
 
