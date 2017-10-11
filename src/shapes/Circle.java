@@ -18,4 +18,12 @@ public class Circle extends Shape {
 	public double getRadius() {
 		return radius;
 	}
+
+
+	public double calculateArea() {
+		double area = 2*Math.PI*radius;
+		return radius;
+	}
+	
+
 }
